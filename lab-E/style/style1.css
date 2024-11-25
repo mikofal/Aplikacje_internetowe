@@ -1,0 +1,135 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: rgb(250, 244, 223);
+    
+}
+
+.head {
+    background-image: url('../img/tło.jpg');
+    background-size: cover;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.head h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 
+        1px 1px 2px black,
+        -1px -1px 2px black, 
+        1px -1px 2px black, 
+        -1px 1px 2px black;
+}
+
+.menu {
+    background-color: rgb(178, 174, 158);;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(113, 110, 100);;
+    color: white;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.category {
+    display: flex;
+    margin: 20px 5%;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin-bottom: 100px;
+    margin: auto;
+    padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.description>p{
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+.description > h2{
+     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .category {
+        display: block;
+        text-align: center;
+        flex-direction: column;
+    }
+    .category>img{
+        width: 50%;
+        margin-top: 5%;
+    }
+    
+}
+
+.wrapper {
+    /* min-height: 30%; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
