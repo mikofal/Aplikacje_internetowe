@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    background: #0f3460;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #e94560;
+}
+
+/* Styl grupy input i button */
+.input-group {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #16213e;
+    color: #ffffff;
+}
+
+button {
+    background-color: #e94560;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5c7a;
+}
+
+/* Wyniki */
+#weatherResult {
+    margin-top: 20px;
+}
+
+.weather-card, .forecast-card {
+    background: #16213e;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.weather-card h2, .forecast-card h2 {
+    margin-bottom: 15px;
+    color: #e94560;
+}
+
+.forecast-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.forecast-item {
+    display: flex;
+    align-items: center;
+    background: #1a1a2e;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.forecast-item img {
+    margin-right: 10px;
+}
+
+.forecast-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.forecast-info p {
+    margin: 0;
+}
